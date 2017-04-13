@@ -30,7 +30,7 @@ var roleHarvester = {
         }
             //if no work is left, the harvester should upgrade the controller
         if(harvestWorkAvailable ==  false) {
-            creep.say("Nothing left to do -> upgrading!");
+            creep.say("Upgrading");
             creep.moveTo(creep.room.controller, {visualizePathStyle: {stroke: '#ffffff'}});
         }
 
