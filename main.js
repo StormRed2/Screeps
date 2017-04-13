@@ -29,7 +29,7 @@ module.exports.loop = function () {
         console.log('Spawning new harvester: ' + newName);
     }
 
-    if(upgraders.length < 2) {
+    if(upgraders.length < 4) {
         var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'upgrader'});
         console.log('Spawning new Upgrader: ' + newName);
 
