@@ -1,5 +1,6 @@
 var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');
+var roleBuilder = require('role.builder');
 
 var board = require('info.board');
 
@@ -30,8 +31,13 @@ module.exports.loop = function () {
     }
 
     if(upgraders.length < 4) {
-        var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'upgrader'});
+        var newName = Game.spawns['Spawn1'].createCreep([WORK, CARRY, MOVE], undefined, {role: 'upgrader'});
         console.log('Spawning new Upgrader: ' + newName);
+    }
+
+        if(builder.length < 1) {
+            var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'builder'});
+            console.log('Spawning new Builder: ' + newName);
 
 
     }
@@ -53,5 +59,9 @@ module.exports.loop = function () {
         if(creep.memory.role == 'upgrader') {
             roleUpgrader.run(creep);
         }
+        if(creep.memory.role == 'builder') {
+            roleBuilder.run(creep);
+        }
+
     }
 }
