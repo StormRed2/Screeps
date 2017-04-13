@@ -3,7 +3,7 @@
  */
 
 
-var info = {
+var board = {
 
     printInfos: function () {
 
