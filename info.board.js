@@ -3,18 +3,25 @@
  */
 
 
+
+
 var board = {
 
-    printInfos: function () {
-
-
-
+    printInfos: function() {
 
         var d = new Date();
         var m = d.getMinutes();
         var s = d.getSeconds();
 
-        console.log("TEST");
+
+        if (s == 0 || s == 1 || s == 2 || s == 3 || s == 4 || s == 5 || s == 6) {
+            console.log();
+            console.log();
+            console.log("TEST");
+
+
+        }
 
     }
 }
+module.exports = board;

@@ -19,10 +19,10 @@ module.exports.loop = function () {
     //console.clear();
     board.printInfos();
 
-    console.log("Currently there are:");
-    console.log('Harvesters: ' + harvesters.length);
-    console.log('Upgraders: ' + upgraders.length);
-    console.log('Builders: ' + builder.length);
+    //console.log("Currently there are:");
+    //console.log('Harvesters: ' + harvesters.length);
+    //console.log('Upgraders: ' + upgraders.length);
+    //console.log('Builders: ' + builder.length);
 
     if(harvesters.length < 4) {
         var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'harvester'});
