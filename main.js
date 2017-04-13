@@ -1,7 +1,7 @@
 var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');
 
-var infoboard = require('info.board');
+var info = require('info.board');
 
 module.exports.loop = function () {
 
@@ -17,7 +17,7 @@ module.exports.loop = function () {
     var builder = _.filter(Game.creeps, (creep) => creep.memory.role == 'builder');
 
     //console.clear();
-    infoboard.printInfos();
+    info.printInfos();
 
     console.log("Currently there are:");
     console.log('Harvesters: ' + harvesters.length);
