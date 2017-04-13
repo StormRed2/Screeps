@@ -20,6 +20,7 @@ var board = {
             console.log();
             console.log();
             console.log("***********************************");
+            console.log("Enegery Level: " + Game.spawns.Spawn1.room.energyAvailable+ " " + Game.spawns.Spawn1.room.energyCapacityAvailable);
             console.log("Harvesters: " + harvesters.length);
             console.log("Upgraders: " + upgraders.length);
             console.log("Builders: " + builders.length);
