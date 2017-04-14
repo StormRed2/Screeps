@@ -23,4 +23,4 @@ console.log("Test: am I'm running?");
 
 }
 
-module.exports = managerCreeps;
+module.exports = manager;
