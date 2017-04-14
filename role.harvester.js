@@ -29,6 +29,11 @@ var roleHarvester = {
             }
         }
 
+        if(harvestWorkAvailable == false){
+
+            roleUpgrader.run(creep);
+        }
+
 
     }
 };
