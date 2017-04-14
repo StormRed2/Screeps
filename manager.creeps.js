@@ -9,12 +9,6 @@ var manager ={
 run: function ( ) {
 
 
-    var harvesterCount = factoryWorkload.getDynamicHarvestersCount();
-    var minersCount = factoryWorkload.getDynamicMinersCount();
-    var upgraderCount = factoryWorkload.getDynamicUpgradersCount();
-    var buildersCount = factoryWorkload.getDynamicBuildersCount();
-    var repairerCount = factoryWorkload.getDynamicRepairersCount();
-
 console.log("Test: am I'm running?");
 
 }
